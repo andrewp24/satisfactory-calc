@@ -1,8 +1,12 @@
 # This program is going to be asking the user what items they want to produce and them
 
+import user_input
+import calculations
 
-item = input("What item do you need to make? ")
-amount = input("How many of those do you need to make? ")
 
-print(f"You said that you would like to make {amount} of: {item}. ")
-print(f"Calculating which resources are needed to create the {amount} {item}(s)....")
+if __name__ == "__main__":
+
+    item = user_input.what_item()
+    num_of_item = user_input.how_many()
+
+    res = calculations.calc_needs(item, num_of_item)
