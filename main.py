@@ -6,7 +6,7 @@ import calculations
 
 if __name__ == "__main__":
 
-    item = user_input.what_item()
+    item_name = user_input.what_item()
     num_of_item = user_input.how_many()
 
-    res = calculations.calc_needs(item, num_of_item)
+    res = calculations.calc_needs(item_name, num_of_item)

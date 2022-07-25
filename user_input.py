@@ -4,12 +4,12 @@ This file will hold all user input code
 
 
 def what_item():
-    item = input("What item do you need to make? ")
-    item = item.strip().lower().replace(" ", "_")
-    if item == "":
+    item_name = input("What item do you need to make? ")
+    item_name = item_name.strip().lower().replace(" ", "_")
+    if item_name == "":
         print("This cannot be empty. please type in a craftable item from the game.")
-        item = what_item()
-    return item
+        item_name = what_item()
+    return item_name
 
 
 def how_many():
